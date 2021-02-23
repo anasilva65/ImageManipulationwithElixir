@@ -3,10 +3,11 @@ defmodule Identicon do
     input
     |> hash_input
     |> pick_color
+    |> build_grid
   end
 
   def build_grid( %Identicon.Image{hex: hex}) do
-    
+
   end
   def pick_color(%Identicon.Image{hex: [r, g, b | _tail]} = image) do
 
