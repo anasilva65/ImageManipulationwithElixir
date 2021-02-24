@@ -23,4 +23,9 @@ defmodule Identicon do
       hex
       |> Enum.chunk(3)
   end
+
+  def mirror_row(row) do
+    [first, second | _third] = row
+    row ++ [second, first]
+  end
 end
