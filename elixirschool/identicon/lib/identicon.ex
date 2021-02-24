@@ -25,7 +25,10 @@ defmodule Identicon do
   end
 
   def mirror_row(row) do
-    [first, second | _third] = row
+    # [145, 46, 200]
+    [first, second | _tail] = row
+
+    #[145, 46, 200, 46, 200]
     row ++ [second, first]
   end
 end
