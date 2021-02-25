@@ -23,6 +23,7 @@ defmodule Identicon do
       hex
       |> Enum.chunk(3)
       |> Enum.map(&mirror_row/1)
+      |> List.flatten
   end
 
   def mirror_row(row) do
