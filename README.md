@@ -11,12 +11,6 @@ Uses the MD5 hashing algorithm to create a unique graphical identicon based on a
 - Mapping and iterating through Elixir data structures
 - Better knowledge of Elixir library, e.g. Enum.chunk/2, Enum.filter/2, etc.
 
-# Project Overview
-- Pattern matching within method arguments
-- Greater understanding of the pipe operator and the way Elixir is meant to be used
--Mapping and iterating through Elixir data structures
-- Better knowledge of Elixir library, e.g. Enum.chunk/2, Enum.filter/2, etc.
-
 # Elixir Code
 The **main function** in the Identicon module is structured like so:
 ```
@@ -38,7 +32,6 @@ def main(input) do
   # save the image to file
 end
 ```
-
 # Running the code
 - Run iex -S mix in the directory, and opens the elixir terminal
 - Run Identicon.main("your string")
