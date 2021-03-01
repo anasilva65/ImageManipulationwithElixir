@@ -18,16 +18,22 @@ def main(input) do
   input
   |> hash_input
   # hashes the input string
+  
   |> pick_color
   # takes first three integers for r, g, b color
+  
   |> build_grid
   # chunks the list into 3's, flattens, then adds index to each element
+  
   |> filter_odd_squares
   # filters out the odd numbers in the list
+  
   |> build_pixel_map
   # maps coordinates for the colored squares
+  
   |> draw_image
   # create image with Erlang egd
+  
   |> save_image(input)
   # save the image to file
 end
